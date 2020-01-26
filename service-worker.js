@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tamuhack2020/precache-manifest.8da8ab4445b72c5215f8fb85b6993015.js"
+  "/tamuhack2020/precache-manifest.e29c8e747af9639e6c3286284662f350.js"
 );
 
 self.addEventListener('message', (event) => {
