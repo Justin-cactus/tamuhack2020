@@ -1,14 +1,15 @@
 import React, {Component} from "react";
+import './landing.css'
 import logo from '../logo.svg'
 
 export default class Landing extends Component {
 
     render() {
         return(
-            <div style={{paddingTop: '5vh', height: '95vh', background: '#ffffff'}}>
+            <div id={'landing'}>
                 <img src={logo} className={'App-logo'} />
                 <div>
-                    <input></input><button>Search</button>
+                    <input /><button>Search</button>
                 </div>
                 <p>
                     TERMS OF SERVICE

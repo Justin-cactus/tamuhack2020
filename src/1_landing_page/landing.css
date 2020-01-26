@@ -1,3 +1,9 @@
+#landing {
+    padding-top: 5vh;
+    height: 95vh;
+    background: #ffffff
+}
+
 input {
     border-radius: 5px;
     border: 2px solid rgba(211,211,211, 0.5);

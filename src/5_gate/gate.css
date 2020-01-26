@@ -1,0 +1,19 @@
+#gate-info {
+    height: 95vh;
+    background: #ffa7b6
+}
+
+.gate-at {
+    display: block;
+    opacity: 1;
+}
+
+.gate-going {
+    display: block;
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}

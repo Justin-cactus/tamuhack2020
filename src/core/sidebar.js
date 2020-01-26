@@ -30,12 +30,12 @@ export default class Sidebar extends Component {
         return(
             <div className={'nav' + cName}>
                 <aside>
-                    <div>Flight Info</div>
-                    <div>Origin Airport</div>
-                    <div>Check-In / Security</div>
-                    <div>Gate</div>
-                    <div>Destination Airport</div>
-                    <div>Start New</div>
+                    <a href={"#flight-info"}>Flight Info</a>
+                    <a href={"#origin-airport"}>Origin Airport</a>
+                    <a href={"#check-in"}>Check-In / Security</a>
+                    <a href={"#gate-info"}>Gate Info</a>
+                    <a href={"#destination-airport"}>Destination Airport</a>
+                    <button style={{bottom: "0"}}>Start New</button>
                 </aside>
                 <span className={'navbutton' + cName}>
                     <img src={open} width={'10%'} onClick={() => this.navOpen()}/>
