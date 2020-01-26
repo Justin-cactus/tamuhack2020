@@ -19,7 +19,7 @@ function App() {
       <FlightInfo date={'1/25/2020'} departure={'10:00am'} boarding={'9:30am'} gate={'13B'} arrival={'3:00pm'} baggage={'41'} />
       <Checkin />
       <Takeoff />
-      <Thanks />
+      <Thanks cityname={'Rio de Janeiro'}/>
       <Gate />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -32,7 +32,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Eat my dick
         </a>
       </header>
     </div>
