@@ -38,8 +38,8 @@ export default class Sidebar extends Component {
                     <div>Start New</div>
                 </aside>
                 <span className={'navbutton' + cName}>
-                    <img src={open} width={'15%'} onClick={() => this.navOpen()}/>
-                    <img src={close} width={'15%'} onClick={() => this.navCollapse()}/>
+                    <img src={open} width={'10%'} onClick={() => this.navOpen()}/>
+                    <img src={close} width={'10%'} onClick={() => this.navCollapse()}/>
                 </span>
             </div>
         );
