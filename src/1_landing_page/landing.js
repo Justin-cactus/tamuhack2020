@@ -11,7 +11,7 @@ export default class Landing extends Component {
                 <div>
                     Flight Number
                     <br />
-                    <input /><button>Search</button>
+                    <input /><button>Go</button>
                 </div>
                 <p>
                     TERMS OF SERVICE
@@ -21,6 +21,8 @@ export default class Landing extends Component {
                     DO NOT SUE US FOR MISSING YOUR FLIGHT
                     <br />
                     IT'S YOUR FAULT
+                    <br />
+                    BY CLICKING GO YOU AGREE TO THE ABOVE TERMS
                 </p>
             </div>
         );

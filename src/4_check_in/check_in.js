@@ -3,10 +3,6 @@ import "./check_in.css"
 
 export default class Checkin extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return(
             <div id={'check-in'} className={'card'}>

@@ -6,15 +6,14 @@
 }
 
 .nav aside {
-    width: 65vw;
     height: 100%;
     background: whitesmoke;
     text-align: left;
     float: left;
 }
 
-.nav.collapsed {
-    transform: translateX(-65vw);
+.navbutton {
+    display: none;
 }
 
 .nav a {
@@ -25,35 +24,44 @@
     padding: 3vh 4vw;
 }
 
+@media screen and (max-width: 479px) {
+    .nav aside {
+        width: 65vw;
+    }
 
-.navbutton {
-    text-align: left;
-    transition: all 1s ease-in-out;
-    transform: translateX(65vw);
-}
+    .nav.collapsed {
+        transform: translateX(-65vw);
+    }
 
-.navbutton img:nth-child(1) {
-    display: none;
-    opacity: 0;
-    transition: all 1s ease-in-out;
-}
+    .navbutton {
+        display: block;
+        text-align: left;
+        transition: all 1s ease-in-out;
+    }
 
-.navbutton img:nth-child(2) {
-    display: block;
-    opacity: 1;
-    transition: all 1s ease-in-out;
-}
+    .navbutton img:nth-child(1) {
+        display: none;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+    }
 
-.navbutton.collapsed {
-    transform: translateX(0);
-}
+    .navbutton img:nth-child(2) {
+        display: block;
+        opacity: 1;
+        transition: all 1s ease-in-out;
+    }
 
-.navbutton.collapsed img:nth-child(1) {
-    opacity: 1;
-    display: block;
-}
+    .navbutton.collapsed {
+        transform: translateX(0);
+    }
 
-.navbutton.collapsed img:nth-child(2) {
-    opacity: 0;
-    display: none;
+    .navbutton.collapsed img:nth-child(1) {
+        opacity: 1;
+        display: block;
+    }
+
+    .navbutton.collapsed img:nth-child(2) {
+        opacity: 0;
+        display: none;
+    }
 }
