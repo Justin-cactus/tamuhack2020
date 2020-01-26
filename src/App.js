@@ -1,10 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Infobar from "./core/infobar";
+import Sidebar from "./core/sidebar";
 
 function App() {
   return (
     <div className="App">
+      <Sidebar />
+      <Infobar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
