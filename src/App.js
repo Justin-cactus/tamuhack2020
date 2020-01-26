@@ -3,12 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import Infobar from "./core/infobar";
 import Sidebar from "./core/sidebar";
+import Checkin from "./4_check_in/check_in"
 
 function App() {
   return (
     <div className="App">
       <Sidebar />
       <Infobar departure={'10:00am'} flightNumber={"DL31"}/>
+      <Checkin />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
