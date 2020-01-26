@@ -1,15 +1,15 @@
-#nav {
+.nav {
     z-index: 2;
     position: fixed;
     height: 100%;
+    transition: all 1s ease-in-out;
 }
 
-.nav {
+.nav aside {
     width: 65vw;
     height: 100%;
     background: whitesmoke;
     text-align: left;
-    transition: all 1s ease-in-out;
     float: left;
 }
 

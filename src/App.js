@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Sidebar />
-      <Infobar />
+      <Infobar departure={'10:00am'} flightNumber={"DL31"}/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

@@ -28,8 +28,8 @@ export default class Sidebar extends Component {
         const cName = this.state.collapsed ? ' collapsed' : '';
 
         return(
-            <div id={'nav'}>
-                <aside className={'nav' + cName}>
+            <div className={'nav' + cName}>
+                <aside>
                     <div>Flight Info</div>
                     <div>Origin Airport</div>
                     <div>Check-In / Security</div>

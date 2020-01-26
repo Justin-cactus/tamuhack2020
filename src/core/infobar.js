@@ -16,9 +16,8 @@ export default class Infobar extends Component {
     render() {
         return(
           <div style={infostyle}>
-              <span style={{fontSize: '200%', verticalAlign: "top"}}>{this.props.departure}</span>
-              <span style={{padding: "3px", verticalAlign: "middle"}}>{this.props.boarding} (Boarding)</span>
-              <span style={{float: 'right'}}>Flight Number</span>
+              <span style={{fontSize: '200%', verticalAlign: "top", marginLeft: '15%'}}>{this.props.departure}</span>
+              <span style={{float: 'right'}}>{this.props.flightNumber}</span>
           </div>
         );
     }
