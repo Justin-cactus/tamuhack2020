@@ -8,7 +8,7 @@ export default class Checkin extends Component {
 
     render() {
         return(
-            <div style={{height: "95vh"}}>
+            <div style={{height: "95vh", background: '#ffc0cb'}}>
             </div>
         );
     }

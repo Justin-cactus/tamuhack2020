@@ -6,13 +6,15 @@ import Sidebar from "./core/sidebar";
 import Landing from "./1_landing_page/landing";
 import Checkin from "./4_check_in/check_in"
 
+// #ffffff, #fff3f5, #ffdae0, #ffc0cb, #ffa7b6, #ff8da1, #ff748c, #ff5b77
+
 function App() {
   return (
     <div className="App">
       <Sidebar />
       <Infobar departure={'10:00am'} flightNumber={"DL31"}/>
-      <Checkin />
       <Landing />
+      <Checkin />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

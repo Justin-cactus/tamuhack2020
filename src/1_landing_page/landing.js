@@ -5,7 +5,7 @@ export default class Landing extends Component {
 
     render() {
         return(
-            <div style={{paddingTop: '5vh', height: '95vh'}}>
+            <div style={{paddingTop: '5vh', height: '95vh', background: '#ffffff'}}>
                 <img src={logo} className={'App-logo'} />
                 <div>
                     <input></input><button>Search</button>
