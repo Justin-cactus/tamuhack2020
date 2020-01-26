@@ -5,7 +5,7 @@ export default class FlightInfo extends Component {
 
     render() {
         return(
-            <div id={'flight-info'}>
+            <div id={'flight-info'} className={'card'}>
                 <div>{this.props.date}</div>
                 <div>Depart: {this.props.departure}</div>
                 <div>Board: {this.props.boarding}</div>

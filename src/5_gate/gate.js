@@ -27,7 +27,7 @@ export default class Gate extends Component {
         const cAt    = this.state.going ? ' hidden' : '';
 
         return(
-            <div id={'gate-info'}>
+            <div id={'gate-info'} className={'card'}>
                 <div>
                     <button onClick={() => this.showGoing()}>Going to Gate</button>
                     <button onClick={() => this.showAt()}>At Gate</button>

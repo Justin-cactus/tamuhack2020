@@ -1,6 +1,5 @@
-#landing {
-    padding-top: 5vh;
-    height: 95vh;
+#landing-page {
+    height: 100vh;
     background: #ffffff
 }
 
@@ -9,8 +8,4 @@ input {
     border: 2px solid rgba(211,211,211, 0.5);
     padding: 5px;
     margin: 5px;
-}
-
-button {
-    font-family: Calibri;
 }

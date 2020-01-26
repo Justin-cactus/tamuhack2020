@@ -1,16 +1,12 @@
 import React, {Component} from "react";
+import './thanks.css'
 import logo from '../logo.svg'
 
 export default class Thanks extends Component {
-    //     //#ff8da1
-
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return(
-            <div style={{paddingTop: '5vh', height: '95vh', background: '#ff5b77'}}>
+            <div id={'thanks'} className={'card'}>
                 <img src={logo} className={'App-logo'} />
                 <div>
                     <p>

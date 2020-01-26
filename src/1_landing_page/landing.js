@@ -6,9 +6,11 @@ export default class Landing extends Component {
 
     render() {
         return(
-            <div id={'landing'}>
+            <div id={'landing-page'} className={'card'}>
                 <img src={logo} className={'App-logo'} />
                 <div>
+                    Flight Number
+                    <br />
                     <input /><button>Search</button>
                 </div>
                 <p>

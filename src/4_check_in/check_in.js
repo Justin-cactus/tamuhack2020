@@ -9,7 +9,7 @@ export default class Checkin extends Component {
 
     render() {
         return(
-            <div style={{height: "95vh", background: '#ffc0cb'}}>
+            <div id={'check-in'} className={'card'}>
                 <h1>
                     Check-In and Security Checklist
                 </h1>
