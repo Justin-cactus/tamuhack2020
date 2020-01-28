@@ -49,11 +49,13 @@ const Fullpage = () => (
 function App() {
     return (
         <div className="App">
-            <Sidebar/>
+            <div style={{position: "fixed", zIndex: "999", height: "50px", width: "50px"}}>
+              <Sidebar/>
+            </div>
             <Infobar departure={'10:00am'} flightNumber={"DL31"}/>
             <div id={'main'}>
+                <Landing />
                 <Fullpage />
-                <Landing/>
             </div>
         </div>
     );

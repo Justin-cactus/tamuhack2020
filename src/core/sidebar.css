@@ -1,67 +1,18 @@
-.nav {
-    z-index: 2;
-    position: fixed;
-    height: 100%;
-    transition: all 1s ease-in-out;
+.bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
 }
 
-.nav aside {
-    height: 100%;
-    background: whitesmoke;
-    text-align: left;
-    float: left;
+nav.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
 }
 
-.navbutton {
-    display: none;
-}
-
-.nav a {
+nav.bm-item-list a {
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.4);
     text-decoration: none;
-    color: black;
-    font-size: 200%;
-    display: block;
-    padding: 3vh 4vw;
+    color: white;
 }
 
-@media screen and (max-width: 479px) {
-    .nav aside {
-        width: 65vw;
-    }
-
-    .nav.collapsed {
-        transform: translateX(-65vw);
-    }
-
-    .navbutton {
-        display: block;
-        text-align: left;
-        transition: all 1s ease-in-out;
-    }
-
-    .navbutton img:nth-child(1) {
-        display: none;
-        opacity: 0;
-        transition: all 1s ease-in-out;
-    }
-
-    .navbutton img:nth-child(2) {
-        display: block;
-        opacity: 1;
-        transition: all 1s ease-in-out;
-    }
-
-    .navbutton.collapsed {
-        transform: translateX(0);
-    }
-
-    .navbutton.collapsed img:nth-child(1) {
-        opacity: 1;
-        display: block;
-    }
-
-    .navbutton.collapsed img:nth-child(2) {
-        opacity: 0;
-        display: none;
-    }
-}

@@ -1,47 +1,24 @@
 import React, {Component} from "react";
+import {slide as Menu} from 'react-burger-menu'
 import './sidebar.css'
 import open from './hamburger-menu.svg';
 import close from './close.svg';
 
 export default class Sidebar extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            collapsed: true
-        }
-    }
-
-    navCollapse() {
-        this.setState(() => {
-            return {collapsed: true};
-        });
-    }
-
-    navOpen() {
-        this.setState(() => {
-           return {collapsed: false};
-        });
-    }
 
     render() {
-        const cName = this.state.collapsed ? ' collapsed' : '';
-
         return(
-            <div className={'nav' + cName}>
-                <aside>
-                    <a href={"#flight-info"}>Flight Info</a>
-                    <a href={"#origin-airport"}>Origin Airport</a>
-                    <a href={"#check-in"}>Check-In / Security</a>
-                    <a href={"#gate-info"}>Gate Info</a>
-                    <a href={"#destination-airport"}>Destination Airport</a>
-                    <button style={{bottom: "0"}}>Start New</button>
-                </aside>
-                <span className={'navbutton' + cName}>
-                    <img src={open} width={'10%'} onClick={() => this.navOpen()}/>
-                    <img src={close} width={'10%'} onClick={() => this.navCollapse()}/>
-                </span>
-            </div>
+            <Menu
+              customBurgerIcon={<img src={open} alt={''}/>}
+              customCrossIcon={<img src={close} alt={''}/>} >
+                <a className={'btn btn-primary'} href={"#flight-info"}>Flight Info</a>
+                <a className={'btn btn-primary'} href={"#origin-airport"}>Origin Airport</a>
+                <a className={'btn btn-primary'} href={"#check-in"}>Check-In / Security</a>
+                <a className={'btn btn-primary'} href={"#gate-info"}>Gate Info</a>
+                <a className={'btn btn-primary'} href={"#destination-airport"}>Destination Airport</a>
+                <button className={'btn btn-primary'} style={{bottom: "0"}}>Start New</button>
+            </Menu>
         );
     }
 }
